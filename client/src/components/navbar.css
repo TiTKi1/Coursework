@@ -37,5 +37,9 @@
     color:lightgray;
     font-size: 20px;
     font-weight: 500;
-    color: #bf80ff;
+    color: #885053;
+}
+.navbar__item p{
+    font-weight: 700;
+    font-size: 20px;
 }
