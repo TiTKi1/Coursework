@@ -1,0 +1,28 @@
+.items__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.items__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 20px;
+}
+.items__title{
+    display: flex;
+    justify-content: center;
+}
+.items__title span {
+    font-size:50px;
+    font-weight:600;
+    color:gray;
+    letter-spacing:3px;
+}
+
+.items__list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}

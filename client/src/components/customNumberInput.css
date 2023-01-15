@@ -1,0 +1,49 @@
+.number__containter{
+    display: flex;
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    border-radius:45px;
+    background:white;
+}
+.number__containter input {
+    width: 100px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    background:none;
+    border: none;
+}
+.number__containter input:focus{
+    outline: none;
+}
+.number__containter button{
+    color:#002266;
+    font-size: 40px;
+    background:none;
+    cursor: pointer;
+    border:none;
+    width: 50px;
+    outline: none;
+}
+.number__containter #increment{
+    border-radius: 0 45px 45px 0;
+    padding: 15px 25px 15px 5px;
+    border:none;
+}
+.number__containter #decrement{
+    border-radius: 45px 0 0 45px;
+    padding: 15px 5px 15px 25px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+.number__containter label {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    text-align: center;
+    font-size: 25px;
+}

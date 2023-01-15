@@ -1,0 +1,30 @@
+.item{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+    color:gray;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:3px 4px 15px 0px rgba(0,0,0,0.75);
+}
+.item__info{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex:2;
+    align-items: center;
+    font-size: 25px;
+    color: gray;
+}
+.item__image{
+    flex:2;
+    display: flex;
+}
+.item__image img{
+    border-radius:10px;
+}
+.item__number{
+    font-size: 40px;
+    flex: 1;
+}
