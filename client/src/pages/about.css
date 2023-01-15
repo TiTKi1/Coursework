@@ -1,0 +1,15 @@
+.about__wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 10px;
+}
+.aboutinfo__wrapper{
+    color:gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}

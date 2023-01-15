@@ -7,6 +7,7 @@ import { Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
 import {BsFillCloudArrowUpFill} from 'react-icons/bs'
 import { useCreateItemMutation } from '../api/apiSlice';
+import Spinner from './Spinner';
 
 interface Event<T = EventTarget> {
     target: T
@@ -26,27 +27,26 @@ interface IFormData{
 
 const Upload = () => {
   const preloadImage = useRef<HTMLImageElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [quantity, setQuantity] = useState<number>(0)
-  const [number, setNumber] = useState<number>(0);
+  // const [number, setNumber] = useState<number>(0);
   const {request} = useHttp();
   const [createItem, {error, isLoading}] = useCreateItemMutation();
 
-  const handleChange = (event: Event<HTMLInputElement>): void => {
-    if(event.target.files){
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        if(preloadImage.current) {
-          preloadImage.current.title = file.name;
-        }
-        reader.onload = function(event) {
-          if(preloadImage.current) {
-            preloadImage.current.src = event.target?.result as string;
-          }
-        };
-        reader.readAsDataURL(file);
-        setSelectedFile(file)
+  const handleChange = (event: any): void => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    if(preloadImage.current) {
+      preloadImage.current.title = file.name;
     }
+    reader.onload = function(event) {
+      if(preloadImage.current) {
+        preloadImage.current.src = event.target?.result as string;
+      }
+    };
+    reader.readAsDataURL(file);
+    setSelectedFile(file)
   }
 
   const handleSubmit = async (values :IFormData, resetForm: ()=>any) => {
@@ -61,18 +61,24 @@ const Upload = () => {
       name: values.name,
       place: values.place,
       quantity,
-      number,
+      // number,
       fileInfo: file
     };
     await createItem(postObj as any as IItem)
     setQuantity(0)
-    setNumber(0)
+    // setNumber(0)
     setSelectedFile(null)
+    if(inputRef.current?.value){
+      inputRef.current.value=null as any as string
+    }
     resetForm()
   }
+  console.log(isLoading)
   return (
     <div className='upload-form-bg'>
-      {isLoading && <h1>Идет загрузка...</h1>}
+      {isLoading && (
+        <div className='loader'><Spinner/></div>
+      )}
       <Formik initialValues={{
           name: '',
           place: '',
@@ -90,16 +96,17 @@ const Upload = () => {
               <Field type="text" placeholder='Enter your place' id='place' name='place'/>
               <ErrorMessage className='error' name="place">{(msg)=><div className='error'>{msg}</div>}</ErrorMessage>
               <div className='upload-numbers'>
-                <CustomNumberInput label="Number" name="number" type="number" id="number" value={number} setNumber={setNumber}/>
+                {/* <CustomNumberInput label="Number" name="number" type="number" id="number" value={number} setNumber={setNumber}/> */}
                 <CustomNumberInput label="Quantity" name="quantity" type="number" id="quantity" value={quantity} setNumber={setQuantity}/>
               </div>
               <div className='upload-file'>
-                <input type="file" 
+                <input ref={inputRef} type="file" 
                   onChange={handleChange}
                   className='hidden file__input'
                   id='file'
                   name='file'
-                  accept='image/*,.png,.jpg,.gif,.web'/>
+                  accept='image/*,.png,.jpg,.gif,.web'
+                  />
                 <label htmlFor="file" className='file__label'><BsFillCloudArrowUpFill color='white' fontSize="50"/></label>
               </div>
             {selectedFile ? (

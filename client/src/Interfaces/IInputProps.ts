@@ -17,7 +17,7 @@ export interface IItem {
     name: string;
     place: number;
     quantity: number;
-    number: number;
+    // number: number;
     fileInfo: IUploadedFile
 }
 

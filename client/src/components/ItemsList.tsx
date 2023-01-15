@@ -15,7 +15,7 @@ const ItemsList:FC<IListProps> = ({items}) => {
             <div className='items__list'>
                 {items.map((item, i)=>{
                     return (
-                        <Item key={i} number={i+1} item={item}/>
+                        <Item key={item.id} item={item} number={i+1}/>
                     )
                 })}
             </div>

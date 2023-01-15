@@ -4,9 +4,12 @@
     box-shadow: 0 20px 30px rgba(0,0,0,0.1);
     border-radius:45px;
     background:white;
+    justify-content: center;
+    width: 60%;
+    margin-top: 1rem;
 }
 .number__containter input {
-    width: 100px;
+    width: 200px;
     outline: none;
     border: none;
     text-align: center;
@@ -43,7 +46,8 @@ input::-webkit-inner-spin-button {
 .number__containter label {
     position: absolute;
     width: 100%;
-    bottom: -30px;
     text-align: center;
     font-size: 25px;
+    left: 0;
+    top:-60px;
 }

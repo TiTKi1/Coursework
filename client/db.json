@@ -3,35 +3,42 @@
     {
       "name": "asdasd",
       "place": "asdasd",
-      "quantity": 3,
-      "number": 2,
+      "quantity": 2,
       "fileInfo": {
         "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673809087749-photo_2021-09-13_16-30-09.jpg"
+        "filePath": "/uploads/1673812431600-photo_2021-09-13_16-30-09.jpg"
       },
-      "id": 5
+      "id": 1
     },
     {
       "name": "asdasd",
-      "place": "asd",
+      "place": "asdasdas",
       "quantity": 3,
-      "number": 2,
       "fileInfo": {
         "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673809746220-photo_2021-09-13_16-30-09.jpg"
+        "filePath": "/uploads/1673814700090-photo_2021-09-13_16-30-09.jpg"
       },
-      "id": 6
+      "id": 2
     },
     {
-      "name": "ruslan",
-      "place": "mamedov",
-      "quantity": 3,
-      "number": 2,
+      "name": "asdas",
+      "place": "asdasd",
+      "quantity": 2,
       "fileInfo": {
         "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673811044857-photo_2021-09-13_16-30-09.jpg"
+        "filePath": "/uploads/1673814744059-photo_2021-09-13_16-30-09.jpg"
       },
-      "id": 7
+      "id": 3
+    },
+    {
+      "name": "asdasd",
+      "place": "asdasd",
+      "quantity": 2,
+      "fileInfo": {
+        "fileName": "photo_2021-09-13_16-30-09.jpg",
+        "filePath": "/uploads/1673814772040-photo_2021-09-13_16-30-09.jpg"
+      },
+      "id": 4
     }
   ]
 }
