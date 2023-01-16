@@ -1,44 +1,14 @@
 {
   "items": [
     {
-      "name": "asdasd",
-      "place": "asdasd",
-      "quantity": 2,
-      "fileInfo": {
-        "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673812431600-photo_2021-09-13_16-30-09.jpg"
-      },
-      "id": 1
-    },
-    {
-      "name": "asdasd",
-      "place": "asdasdas",
+      "name": "work",
+      "place": "do23",
       "quantity": 3,
       "fileInfo": {
-        "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673814700090-photo_2021-09-13_16-30-09.jpg"
+        "fileName": "photo_2022-11-27_01-40-00.jpg",
+        "filePath": "/uploads/1673826811970-photo_2022-11-27_01-40-00.jpg"
       },
-      "id": 2
-    },
-    {
-      "name": "asdas",
-      "place": "asdasd",
-      "quantity": 2,
-      "fileInfo": {
-        "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673814744059-photo_2021-09-13_16-30-09.jpg"
-      },
-      "id": 3
-    },
-    {
-      "name": "asdasd",
-      "place": "asdasd",
-      "quantity": 2,
-      "fileInfo": {
-        "fileName": "photo_2021-09-13_16-30-09.jpg",
-        "filePath": "/uploads/1673814772040-photo_2021-09-13_16-30-09.jpg"
-      },
-      "id": 4
+      "id": 1
     }
   ]
 }
