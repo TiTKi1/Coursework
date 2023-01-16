@@ -2,11 +2,11 @@
   "items": [
     {
       "name": "work",
-      "place": "do23",
-      "quantity": 3,
+      "place": "dsd",
+      "quantity": 4,
       "fileInfo": {
-        "fileName": "photo_2022-11-27_01-40-00.jpg",
-        "filePath": "/uploads/1673826811970-photo_2022-11-27_01-40-00.jpg"
+        "fileName": "Capture001.png",
+        "filePath": "/uploads/1673862646014-Capture001.png"
       },
       "id": 1
     }

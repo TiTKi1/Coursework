@@ -4,7 +4,9 @@ const AboutPage = () => {
   return (
     <div className='about__wrapper'>
         <div className='aboutinfo__wrapper'>
-            <h1>Ruslan Mamedov Application</h1>
+            <h1>e-mail:site.help@gmail.com</h1>
+            <h2>Instagram:site.tiktok</h2>
+            <h2>phone:+380505005050</h2>
             <p>
                 Application version <strong>1.0.0</strong>
             </p>
